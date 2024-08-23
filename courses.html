@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Education System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" id="logo">
+
+        <h1>VeeraPath</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="frameset.html">About Us</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="help.html">Help</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Courses</h2>
+            <form id="courseForm">
+                <div id="courseCatalog">
+                    <input type="checkbox" id="course1" name="courses" value="Introduction to HTML">
+                    <label for="course1">Introduction to HTML</label><br>
+
+                    <input type="checkbox" id="course2" name="courses" value="CSS Basics">
+                    <label for="course2">CSS Basics</label><br>
+
+                    <input type="checkbox" id="course3" name="courses" value="JavaScript Essentials">
+                    <label for="course3">JavaScript Essentials</label><br>
+
+                    <input type="checkbox" id="course4" name="courses" value="Data Structures">
+                    <label for="course4">Data Structures</label><br>
+
+                    <input type="checkbox" id="course5" name="courses" value="Algorithms">
+                    <label for="course5">Algorithms</label><br>
+                </div>
+                <button type="submit">Submit</button>
+                <p id="courseMessage"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="courses.js"></script>
+</body>
+
+</html>

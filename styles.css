@@ -1,0 +1,203 @@
+/* General Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #f5f5f5, #e0e0e0);
+  color: #333;
+  line-height: 1.6;
+  background-image: url("bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 1em; /* Keep the padding small to maintain a smaller header */
+  text-align: center;
+  border-bottom: 4px solid #3498db;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative; /* Set position to relative to allow absolute positioning of the logo */
+}
+
+header img#logo {
+  height: 150px; /* Increase the logo size */
+  width: 150px;
+  margin-right: 1em;
+  position: absolute; /* Position the logo absolutely */
+  top: -25px; /* Move the logo up */
+  left: 1em; /* Adjust the horizontal position */
+  z-index: 1; /* Ensure the logo is on top */
+}
+
+header h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2em; /* Reduced font size */
+  color: #14c5c5;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  flex: 1;
+  padding-left: 170px; /* Add padding to make space for the logo */
+}
+
+header h1:hover {
+  transform: scale(1.1);
+  color: #0448c7;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #34495e;
+  flex: 1;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  padding: 0.5em 1em; /* Reduced padding for smaller navbar */
+  display: block;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #2c3e50;
+  transform: scale(1.05);
+}
+
+main {
+  padding: 2em;
+  max-width: 900px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 2em;
+  background: white;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  margin-top: 0;
+  color: #2c3e50;
+  font-size: 2em;
+}
+
+#registerDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+#registerDiv label {
+  margin-top: 0.75em;
+  color: #555;
+}
+
+#registerDiv input,
+#registerDiv select {
+  margin-top: 0.5em;
+  padding: 0.75em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#registerDiv input:focus,
+#registerDiv select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+  outline: none;
+}
+
+#registerDiv button {
+  margin-top: 1.5em;
+  padding: 0.75em;
+  background: linear-gradient(to right, #3498db, #2980b9);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+#registerDiv button:hover {
+  background: linear-gradient(to right, #2980b9, #3498db);
+  transform: scale(1.05);
+}
+
+#loginMessage,
+#registerMessage,
+#profileMessage {
+  color: #e74c3c;
+  margin-top: 1em;
+  font-size: 1.1em;
+}
+
+button#logout {
+  background: #e74c3c;
+  border: none;
+  color: white;
+  padding: 0.75em 1.5em;
+  font-size: 1.1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+button#logout:hover {
+  background: #c0392b;
+  transform: scale(1.05);
+}
+
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  border-top: 4px solid #3498db;
+}
+.input-container {
+  margin-bottom: 10px;
+}
+
+.login-btn {
+  padding: 10px;
+  width: 120px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: lightblue;
+  border: none;
+}
+
+.login-btn:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+.input-el {
+  margin-left: 10px;
+  padding: 5px;
+}
